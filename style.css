@@ -1,19 +1,49 @@
-div{
-    width: 100px;
-    height: 100px;
-    border: 20px solid #000204;
-    border-top: 20px solid #de60fa;
-    border-radius: 50%;
-    animation: rotate 3s infinite ease-in-out;
-    background-color: rgb(86, 55, 209);
-
-}
-
-@keyframes rotate{
-    0%{
-        transform: rotate(0deg);
+ body {
+      background-color: rgb(11, 1, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
     }
-    100%{
-        transform: rotate(360deg);
+
+    .container {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 28px;
     }
-}
+
+    .ring {
+      width: 200px;
+      height: 200px;
+      border-top: 25px solid #de60fa;
+      border-left: 25px solid green;
+      border-bottom: 25px solid yellow;
+      border-right: 25px solid red;
+      border-radius: 50%;
+      animation: rotate 3s infinite ease-in-out;
+      background-color: rgb(86, 55, 209);
+      box-sizing: border-box;
+    }
+
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    #cc {
+      color: #d7ce48;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      text-shadow: 2px 3px 8px black;
+      font-weight: bold;
+      font-size: 30px;
+      pointer-events: none;
+      white-space: nowrap;
+    }
+
+  
