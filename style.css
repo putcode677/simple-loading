@@ -1,0 +1,9 @@
+div{
+    width: 200px;
+    height: 200px;
+    border: 20px solid #4b5563;
+    border-top: 20px solid #60A5FA;
+    border-radius: 50%;
+    animation: rotate 3s infinite ease-in-out;
+
+}
